@@ -1,58 +1,160 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-	font-family: Arial, sans-serif;
-	margin: 0;
-	padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f0f4f8;
+    color: #333;
+    line-height: 1.6;
+    padding: 30px 15px;
 }
 
+/* Main Container */
 .container {
-	max-width: 800px;
-	margin: 0 auto;
-	padding: 50px;
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
 
+/* Header */
 header {
-	text-align: center;
-	margin-bottom: 50px;
+    text-align: center;
+    background-color: #1e3a5f;
+    color: white;
+    padding: 35px 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
 }
 
-h1 {
-	font-size: 36px;
-	margin: 0;
+header h1 {
+    font-size: 36px;
+    margin-bottom: 8px;
+    letter-spacing: 1px;
 }
 
-p {
-	font-size: 18px;
-	margin: 0;
+header p {
+    font-size: 18px;
+    color: #dbeafe;
 }
 
+/* Sections */
 section {
-	margin-bottom: 50px;
+    margin-bottom: 30px;
+    padding: 20px;
+    border-left: 4px solid #2563eb;
+    background-color: #f8fafc;
+    border-radius: 6px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-h2 {
-	font-size: 24px;
-	margin-bottom: 20px;
+/* Section Hover Effect */
+section:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
-ul {
-	margin: 0;
-	padding: 0;
-	list-style: none;
+/* Section Headings */
+section h2 {
+    color: #1e3a5f;
+    font-size: 24px;
+    margin-bottom: 15px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #dbeafe;
 }
 
-li {
-	display: inline-block;
-	margin-right: 10px;
-	font-size: 18px;
+/* Subheadings */
+section h3 {
+    color: #2563eb;
+    font-size: 18px;
+    margin-top: 15px;
+    margin-bottom: 8px;
 }
 
-h3 {
-	font-size: 20px;
-	margin-top: 20px;
-	margin-bottom: 10px;
+/* Paragraphs */
+section p {
+    font-size: 15px;
+    margin-bottom: 12px;
+    text-align: justify;
 }
 
-p {
-	font-size: 18px;
-	line-height: 1.5;
+/* Skills and Strengths Lists */
+section ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
 }
+
+section ul li {
+    background-color: #dbeafe;
+    color: #1e3a5f;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* List Hover Effect */
+section ul li:hover {
+    background-color: #2563eb;
+    color: white;
+    cursor: pointer;
+}
+
+/* Footer Spacing */
+section:last-child {
+    margin-bottom: 0;
+}
+
+/* Responsive Design for Tablets and Phones */
+@media (max-width: 600px) {
+    body {
+        padding: 15px 10px;
+    }
+
+    .container {
+        padding: 20px;
+    }
+
+    header {
+        padding: 25px 15px;
+    }
+
+    header h1 {
+        font-size: 27px;
+    }
+
+    header p {
+        font-size: 16px;
+    }
+
+    section {
+        padding: 15px;
+    }
+
+    section h2 {
+        font-size: 21px;
+    }
+
+    section h3 {
+        font-size: 17px;
+    }
+
+    section p {
+        font-size: 14px;
+    }
+
+    section ul li {
+        font-size: 13px;
+        padding: 7px 12px;
+    }
+}
+
